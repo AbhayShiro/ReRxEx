@@ -1,0 +1,30 @@
+{
+  "name": "rerxex",
+  "description": "This is a react-redux and express starter template using ES6",
+  "main": "",
+  "authors": [
+    "Abhay Shiro"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "React",
+    "Redux",
+    "Express",
+    "Node",
+    "Webpack",
+    "Bluebird",
+    "Axios",
+    "Handlebars"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
