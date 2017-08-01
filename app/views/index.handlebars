@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Universal JavaScript demo application with React</title>    
        <!-- Material Design fonts -->
+  <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="../../static/dist/bundle.css" />       
@@ -14,7 +16,9 @@
     <div id="app">{{{markup}}}</div>   
      <script type="text/javascript" charset="utf-8">
       {{!--window.__REDUX_STATE__ = {{{reduxState}}};--}}
-    </script>    
-    <script src="../../static/dist/bundle-main.js" type="text/babel"></script>
+    </script>  
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="dist/bundle.js" type="text/babel"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

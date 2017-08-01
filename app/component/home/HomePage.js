@@ -3,6 +3,8 @@ import { Link } from 'react-router';
 
 export default class HomePage extends Component {
     render() {
+    debugger;
+        
         return (
             <div>
                 <div className="col-md-12">

@@ -3,14 +3,14 @@ import { Link, IndexLink } from 'react-router';
 
 const Footer = () => {
     return (
-        <footer className="page-footer sticky">
+        <footer className="page-footer">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-sm-6 col-xs-6">
                         <h5 className="title">Footer Content</h5>
                         <p>Here you can write random stuff about life and other things that are not related to web development. PS just kidding.</p>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 col-sm-6 col-xs-6">
                         <h5 className="title">Links</h5>
                         <ul className="styleList">
                             <li><a href="#!">Home</a></li>

@@ -19,13 +19,13 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 // client entry file to generate bundle
-var entry = [path.resolve(__dirname, 'app/index.js')];
+var entry = ['webpack-dev-server/client?http://localhost:3500','webpack/hot/only-dev-server',path.resolve(__dirname, 'app/index.js')];
 
 // name of bundle and target folder
 var output = {
   path: path.resolve(__dirname, 'public/dist'),
-  filename: 'bundle-[name].js',
-  publicPath: 'dist/'
+  filename: 'bundle.js',
+  publicPath: 'dist/'   
 };
 
 // loaders basically transform/preprocess file in required format
@@ -44,6 +44,8 @@ var modules = {
 
 // webpack plugins helpful along with loaders
 var plugins = [
+  new webpack.HotModuleReplacementPlugin(),
+  new webpack.NoErrorsPlugin(),
   new ExtractTextPlugin('bundle.css'),
   new webpack.DefinePlugin({
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
