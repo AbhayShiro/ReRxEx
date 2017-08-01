@@ -26,4 +26,8 @@ router.get('/get', function (req, res) {
     res.json({ message: 'Welcome to ReRxEx API demo !' });
 });
 
+router.get('/blah', function (req, res) {
+    res.json({ message: 'Welcome to blah API demo !' });
+});
+
 module.exports = router;
