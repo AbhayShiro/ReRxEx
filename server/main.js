@@ -22,7 +22,6 @@ import expressApi from './../api';
 import dotenv from 'dotenv';
 import webpack from 'webpack';
 import config from '../webpack.config';
-import http from 'http';
 
 dotenv.config();
 
@@ -70,8 +69,8 @@ app.use('/api', expressApi);
 // universal routing and rendering
 app.use(reactRouter);
 
-let server = http.createServer(app);
-console.log('Server is listening'.blue);
-server.listen(3500);
+// let server = http.createServer(app);
+// console.log('Server is listening'.blue);
+// server.listen(3500);
 
 module.exports = app;
